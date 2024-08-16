@@ -61,13 +61,12 @@ io.on("connection", function (uniquesocket) {
                 uniquesocket.emit("Invalid move: ", move)
             }
         } catch (error) {
-            console.log(err);
+            console.log(error);
             uniquesocket.emit("Invalid move: ", move)
         }
     })
 
     // For checking is it valid move or not 
-
     // for checking wo is online 
     // uniquesocket.on("disconnect", function () {
     //     console.log("disconnected");
